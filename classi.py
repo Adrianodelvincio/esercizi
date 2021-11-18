@@ -18,8 +18,7 @@ class Tv:
         print('showing channel {}'.format(channel))
     def change_channel(self,canale):
         self.channel = canale
-    def add_attribute(self):
-        self.current_channel = self.channel
+    def current_channel(self):
         print("Showing channel {}" .format(self.channel))
 
 panasonic = Tv()
@@ -27,9 +26,9 @@ panasonic.turn_on(channel = 3)
 
 #panasonic.luminosity = 50 ; print(panasonic.luminosity)
 panasonic.change_channel(7)
-panasonic.add_attribute()
+panasonic.current_channel()
 panasonic.change_channel(48)
-panasonic.add_attribute()
+panasonic.current_channel()
 
 
 #using the costructor
