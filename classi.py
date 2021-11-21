@@ -11,19 +11,31 @@ print(x) ; x.append("not restaured") ; print(x)
 class Tv:
     #convention: starting class name with an uppercase
     channel = None
+    luminosity = None
 
-    def turn_on(self,channel = 1): #class methods
+    def turn_on(self,canale = 1, luce = 50): #class methods
         ''' all the class methods get the object instanxe as the first argumemt'''
         print("Turning on {}" .format(self))
-        print('showing channel {}'.format(channel))
+        print('showing channel {}'.format(canale))
+        self.channel = canale
+        self.luminosity = luce
     def change_channel(self,canale):
         self.channel = canale
     def current_channel(self):
         print("Showing channel {}" .format(self.channel))
+    def change_luminosity(self,luce):
+        self.luminosity = luce
+    def current_luminosity(self):
+        print("luminosity {}".format(self.luminosity))
+
 
 panasonic = Tv()
-panasonic.turn_on(channel = 3)
-
+#panasonic.current_channel()
+panasonic.turn_on()
+panasonic.current_luminosity()
+panasonic.change_luminosity(luce = 40)
+panasonic.current_luminosity()
+'''
 #panasonic.luminosity = 50 ; print(panasonic.luminosity)
 panasonic.change_channel(7)
 panasonic.current_channel()
@@ -32,7 +44,6 @@ panasonic.current_channel()
 
 
 #using the costructor
-
 
 class Watch:
 
@@ -48,3 +59,4 @@ class Watch:
 
 orologio1 = Watch('Marco')
 orologio1.print_info()
+'''
