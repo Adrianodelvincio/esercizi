@@ -35,28 +35,7 @@ panasonic.turn_on()
 panasonic.current_luminosity()
 panasonic.change_luminosity(luce = 40)
 panasonic.current_luminosity()
-'''
-#panasonic.luminosity = 50 ; print(panasonic.luminosity)
-panasonic.change_channel(7)
-panasonic.current_channel()
-panasonic.change_channel(48)
-panasonic.current_channel()
 
 
-#using the costructor
 
-class Watch:
 
-    def __init__(self,owner):
-        print("Creating a watch instance...")
-        self.model = "Sellita sw200"
-        self.owner = owner
-
-    def print_info(self):
-        "print model and owner"
-        message = 'this watch is owned by {}, model {}'
-        print(message.format(self.owner,self.model))
-
-orologio1 = Watch('Marco')
-orologio1.print_info()
-'''
