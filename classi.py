@@ -28,14 +28,26 @@ class Tv:
     def current_luminosity(self):
         print("luminosity {}".format(self.luminosity))
 
+class Television:
 
-panasonic = Tv()
-#panasonic.current_channel()
-panasonic.turn_on()
-panasonic.current_luminosity()
-panasonic.change_luminosity(luce = 40)
-panasonic.current_luminosity()
+    def __init__(self,owner):
+        "class constructor"
+        self._owner = owner #owner it's private, someone should not access
 
+    @property
+    def owner(self):
+        return self._owner
+
+    @owner.setter
+    def owner(self,new_owner):
+        #Adesso, siccome l'attributo è privato, restituiamo che non è modificabile
+        print("Nope {}, you can not change the owner" .format(new_owner))
+
+
+tv = Television('Batman')
+print('this tv belong to {}' .format(tv.owner))
+tv.owner = 'Joker'
+print('this tv belong to {}' .format(tv.owner))
 
 
 
