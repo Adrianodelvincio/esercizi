@@ -1,11 +1,6 @@
 import numpy
-'''
-#create a list from a dictionary and then append a new element
-dictionary = {"brand" : "ford" , "model" : "mustang", "year" : 1964}
 
-x = [dictionary[z] for z in dictionary.keys()]
-print(x) ; x.append("not restaured") ; print(x)
-'''
+
 #create the first class, describing television
 
 class Tv:
@@ -27,6 +22,10 @@ class Tv:
         self.luminosity = luce
     def current_luminosity(self):
         print("luminosity {}".format(self.luminosity))
+
+'''
+Esempio utilizzo di variabili private come attributo di una classe
+'''
 
 class Television:
 
