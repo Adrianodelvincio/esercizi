@@ -19,7 +19,7 @@ class string {
 string operator+(const string& a, const string& b){
 /*Questa funzione richiede un minimo di spiegazione: passo come variabili alla funzione i puntatori alle stringhe a e b, siccome sono oggetti della classe string, hanno come metodo assign e tutti gli altri. Con questi posso concatenare */
 	string temp;
-	temp.assign(a.s);
+	temp.assign(a.s); // Può sembrare che a.s è privato, e lo è, ma la funzione operator+ è instanziata dentro la classe, certo porco cane che può vedere cosa è a.s! a lesbicaaa
 	temp.len = a.len + b.len; // quando chiamo .assign, anche len viene definita, come variabile della classe, prima però devo definire la stringa con assign
 	if (temp.len < max_len)
 		strcat(temp.s,b.s); // unisco le due stringhe con questa funzione

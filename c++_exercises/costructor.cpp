@@ -11,9 +11,9 @@ class string {
 		int lenght() {return len;}
 		void print(){std::cout << s << std::endl;}
 		// ora inserisco il distruttore della classe string, quando ho finito devo deallocare e distruggere tutto
-		~string() {delete []s;}
+		~string() {delete []s;} //nota la particolarmente scazzata sintassi che si sono inventati in questo linguaggio 
 	private: 
-		int len; char* s;	
+		int len; char* s;
 };
 
 int main(){
