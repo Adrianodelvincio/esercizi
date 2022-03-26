@@ -3,7 +3,7 @@
 
 const double m_to_k = 1.609;
 
-inline double convert(double mi){ return mi * m_to_k; } //ricord di inserire alla fine sempre ; alla fine. Novità di c++ funzione che viene compilata come riga di codice, evita costo chiamata a funzione.
+inline double convert(double mi){ return mi * m_to_k; } //ricorda di inserire alla fine sempre ; alla fine. Novità di c++ funzione che viene compilata come riga di codice, evita costo chiamata a funzione.
  
 int main(){
 	double miles;

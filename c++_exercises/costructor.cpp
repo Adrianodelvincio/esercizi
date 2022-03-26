@@ -5,7 +5,7 @@
 
 class string {
 	public: 
-	// Qui mettiamo il costruttore, e allochiamo dimanicamente memoria per le stringhe
+	// Qui mettiamo il costruttore, e allochiamo dinamicamente memoria per le stringhe
 		string(int n) {s = new char[n+1]; len = n;}// costruttore eccolo qui, new serve ad allocare memoria per un certo tipo di dato specificato dopo dalla definizione (tipo int, double... char in questo caso) nota che il costruttore HA LA STESSO NOME DELLA CLASSE
 		void assign(const char* st){ strcpy(s,st); len = strlen(st);}
 		int lenght() {return len;}
