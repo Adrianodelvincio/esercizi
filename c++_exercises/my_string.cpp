@@ -10,7 +10,7 @@ class string {
 		int lenghh(){ return len;}
 		void print(){ std::cout << s <<"\nlenght: "<< len << "\n";}
 	private: //accesso ristretto ai membri della funzione
-		char s[max_lenght]; //cosa è s lo faccio ora, le altre sono funzioni e 'vedono' s all'interno della definizione di 					    classe
+		char s[max_lenght]; //cosa è s lo faccio ora, le altre sono funzioni e 'vedono' s all'interno della definizione di classe
 		int len; 
 };
 
