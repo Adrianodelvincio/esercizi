@@ -3,7 +3,7 @@
 
 class Base{
 	public: 
-	Base(const int & id, const int & numero){ //passare con const significa avere un puntatore ad un oggetto e non poterlo modificare
+	Base(const int & id, const int & numero){ //passare con const significa avere una reference ad un oggetto e non poterlo modificare
 		b_id = id ; b_numero = numero;
 	}
 	void Print(){std::cout <<"id è : "<< b_id << std::endl;}

@@ -1,2 +1,4 @@
 # esercizi
-esercizi computing methods
+
+* Da rivedere integrale (python exercises)
+

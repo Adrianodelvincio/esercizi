@@ -7,7 +7,7 @@ class string {
 	public: 
 	// Qui mettiamo il costruttore, e allochiamo dinamicamente memoria per le stringhe
 		string(int n) {s = new char[n+1]; len = n;}// costruttore eccolo qui, new serve ad allocare memoria per un certo tipo di dato specificato dopo dalla definizione (tipo int, double... char in questo caso) nota che il costruttore HA LA STESSO NOME DELLA CLASSE
-		void assign(const char* st){ strcpy(s,st); len = strlen(st);} //per lavorare con le stringhe, bisogna usare le opportune funzioni di string.h
+		void assign(const char* st){ strcpy(s,st); len = strlen(st);}
 		int lenght() {return len;}
 		void print(){std::cout << s << std::endl;}
 		// ora inserisco il distruttore della classe string, quando ho finito devo deallocare e distruggere tutto
